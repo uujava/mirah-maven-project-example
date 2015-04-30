@@ -9,6 +9,7 @@ class ColorAttribute
   implements ALogger
 
   def initialize(a:AttributeDescriptor, c:ABase)
+    a.build
     descr =  a.map_from.build
     log "init color attribute: #{descr} #{a} #{c}"
   end

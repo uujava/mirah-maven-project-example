@@ -16,11 +16,11 @@ import ru.programpark.mirah.extensions.ALogger
 # Системный класс и DSL метки.
 factory class ALabel < ABase
 
-  def text(s:String, descr:AttributeDescriptor = nil):void
+  def text(s:String, descr:AttributeDescriptor = nil):void    
     TextAttribute.new(s, descr, self)
   end
 
-  def color(descr:AttributeDescriptor):void
+  def color(descr:AttributeDescriptor):void    
     ColorAttribute.new(descr, self)
   end
 end

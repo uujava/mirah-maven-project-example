@@ -9,6 +9,7 @@ class TextAttribute
   implements ALogger
 
   def initialize(s:String, a:AttributeDescriptor, c:ABase)
+    a.build if a
     log "init text attribute: #{s} #{a} #{c}"
     @text = s
   end

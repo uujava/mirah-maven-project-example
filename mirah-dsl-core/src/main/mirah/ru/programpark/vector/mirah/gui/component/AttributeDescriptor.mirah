@@ -4,7 +4,7 @@ import ru.programpark.mirah.extensions.ABase
 import ru.programpark.mirah.extensions.ABuilder
 import ru.programpark.mirah.extensions.ALogger
 
-# Системный класс и DSL произвольного изменяемого атрибута
+# пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ DSL пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 factory class AttributeDescriptor < ABuilder
 
 	def map_from:MapFromDescriptor
@@ -12,8 +12,9 @@ factory class AttributeDescriptor < ABuilder
 	end
 
 	def map_from(m:MapFromDescriptor):void
+        m.build
 		@_map_from = m
-		log "map from created: #{m.build}"
+		log "map from created: #{m}"
   end
 
 end
