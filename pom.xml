@@ -13,7 +13,32 @@
     <prerequisites>
         <maven>3.0</maven>
     </prerequisites>
+    
+    <repositories>
+			
+        <repository>
+            <id>central</id>
+            <url>http://192.168.3.209/artifactory/repo</url>
+            <!--url>http://localhost:8081/artifactory/repo</url-->
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
 
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>Maven Plugin Repository</name>
+            <url>http://192.168.3.209/artifactory/repo</url>
+            <!--url>http://localhost:8081/artifactory/repo</url-->
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <javac.target>1.8</javac.target>

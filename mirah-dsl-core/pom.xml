@@ -32,10 +32,10 @@
       <plugin>
         <groupId>org.mirah.maven</groupId>
         <artifactId>maven-mirah-plugin</artifactId>
-        <configuration>
-          <verbose>true</verbose>
-          <newClosures>true</newClosures>
-        </configuration>
+	     <configuration>
+		     <verbose>false</verbose>
+		     <newClosures>true</newClosures>
+	     </configuration>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
