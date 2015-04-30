@@ -4,12 +4,9 @@ import ru.programpark.mirah.extensions.ABase
 import ru.programpark.mirah.extensions.ABuilder
 import ru.programpark.mirah.extensions.ALogger
 
-# Системный класс парсера значений атрибута типа текст.
+# пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.
 class TextAttribute
-  #implements ALogger
-  def log(msg:String):void
-    puts "#{toString}: #{msg}"
-  end
+  implements ALogger
 
   def initialize(s:String, a:AttributeDescriptor, c:ABase)
     log "init text attribute: #{s} #{a} #{c}"

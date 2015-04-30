@@ -4,7 +4,7 @@ import ru.programpark.mirah.extensions.ABase
 import ru.programpark.mirah.extensions.ABuilder
 import ru.programpark.mirah.extensions.ALogger
 
-# Системный класс и DSL произвольного блока мэпинга
+# пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ DSL пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 factory class MapFromDescriptor < ABuilder
-  def _test:void;end
+ 
 end

@@ -4,13 +4,7 @@ import ru.programpark.mirah.extensions.ABase
 import ru.programpark.mirah.extensions.ABuilder
 import ru.programpark.mirah.extensions.ALogger
 
-factory class APanel < ABase
-
-  def layout(s:String):void
-    @layout = s
-  end
-
-  def add(c:ABase):void
-    log "added #{c}"
-  end
+# ????????? ????? ? DSL ????????????? ????? ???????
+factory class MapFromDescriptor < ABuilder
+ 
 end

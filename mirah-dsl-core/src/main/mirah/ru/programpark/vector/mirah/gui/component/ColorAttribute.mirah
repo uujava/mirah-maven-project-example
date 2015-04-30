@@ -4,15 +4,13 @@ import ru.programpark.mirah.extensions.ABase
 import ru.programpark.mirah.extensions.ABuilder
 import ru.programpark.mirah.extensions.ALogger
 
-# Системный класс парсера значений атрибута типа цвет.
+# пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ.
 class ColorAttribute
-  #implements ALogger
-  def log(msg:String):void
-    puts "#{toString}: #{msg}"
-  end
+  implements ALogger
 
   def initialize(a:AttributeDescriptor, c:ABase)
-    log "init color attribute: #{a.map_form.build} #{a} #{c}"
+    descr =  a.map_from.build
+    log "init color attribute: #{descr} #{a} #{c}"
   end
 
   def color(c:String)
