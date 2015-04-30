@@ -43,7 +43,7 @@ end
 # Собственно макрос автоматического создания класса фабрики для компонента
 
 import org.mirah.macros.anno.ExtensionsRegistration
-$ExtensionsRegistration[['java.util.Collection']]
+$ExtensionsRegistration[['java.lang.Object']]
 class FactoryMacro
   
   macro def self.factory(clazz:ClassDefinition):Node    
@@ -71,13 +71,15 @@ class FactoryMacro
         return a 
       end        
     }   
-    
+
+    @mirah.typer.infer(@call.target)
+
     # create factory class with single method 
     fname = SimpleString.new("#{cname}Factory")    
-		fclazz = ClassDefinition.new(fname, nil, [mthd], [], nil, nil)
-		result = NodeList.new
-		result.add clazz
-		result.add fclazz
+	fclazz = ClassDefinition.new(fname, nil, [mthd], [], nil, nil)
+	result = NodeList.new
+	result.add clazz
+	result.add fclazz
     return result
   end   
 end
